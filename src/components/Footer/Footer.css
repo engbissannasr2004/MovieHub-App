@@ -1,0 +1,13 @@
+.Footer {
+    background-color:#0f172a;
+    color: #aaa;
+    text-align: center;
+    padding: 18px;
+    margin-top: 50px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 17px;
+}
+.dark-footer{
+    background-color:#c8242c;
+    color: #fff;
+}

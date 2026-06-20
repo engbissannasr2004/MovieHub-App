@@ -1,0 +1,172 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.navbar {
+  width: 90%;
+  /* margin: 20px auto; */
+  padding: 15px 30px;
+  background: #0f172a;
+  border-radius: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 80px;
+}
+
+.navbar h1 {
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.nav-links a:hover {
+  color: gold;
+}
+
+.search-box {
+  background: white;
+  padding: 10px 15px;
+  border-radius: 30px;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.search-box input {
+  border: none;
+  outline: none;
+}
+
+.theme-btn {
+  background: gold;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.dark-nav  {
+  background-color: #c8242c;
+  color:#0f172a;
+}
+.dark-nav h1{
+  color: fff;
+}
+.dark-nav .nav-links a {
+  color: fff;
+}
+
+.dark-nav .search-box {
+  background: #ddd8d8;
+}
+.dark-nav .search-box input{
+  background-color: #dcd3d3;
+}
+
+
+/* ===== RESPONSIVE ===== */
+
+@media (max-width: 1024px) {
+  .navbar {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .nav-links {
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+
+  .search-box {
+    flex: 1;
+    min-width: 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 20px;
+  }
+  .navbar h1{
+    font-size: 27px;
+  }
+
+
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+  }
+
+  .search-box {
+    width: 100%;
+  }
+
+  .theme-btn {
+    width: 100%;
+  }
+}
+
+
+/* ===== MENU ICON ===== */
+.menu-icon {
+  display: none;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 768px) {
+
+  .menu-icon {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    background: #0f172a;
+    padding: 15px;
+    border-radius: 15px;
+    margin-top: 10px;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links a {
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+  }
+}
+.menu-icon{
+  margin-left: 140px;
+}
+.theme-btn:hover{
+  background-color:#89aebe;
+  color: #fff;
+
+}

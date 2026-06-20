@@ -1,0 +1,23 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.movies-container {
+    padding: 40px 80px;
+    display: grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px, 1fr));
+    gap: 25px;
+}
+.page {
+    background-color: rgb(187, 206, 222);
+    color: black;
+    transition: 0.4s;
+    padding-top: 25px;
+}
+
+.dark-page {
+    background: #0f172a;
+    color: white;
+}
+
